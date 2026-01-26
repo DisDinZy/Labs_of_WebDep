@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Recipe book</title>
+        <style>
+            body {
+                background-color: #fff5e6;
+                font-family: "Segoe UI", Tahoma, sans-serif;
+                color: #4a2c2a;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                background-color: #ff6347;
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+            }
+            .nav-box {
+                background: white;
+                padding: 15px;
+                border: 2px solid #ff6347;
+                border-radius: 8px;
+            }
+            .recipe-card {
+                background: white;
+                margin-top: 30px;
+                padding: 20px;
+                border-radius: 15px;
+                border-left: 10px solid #ffa07a;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                max-width: 400px;
+                margin: 15px 0;
+            }
+            th {
+                background-color: #ffa07a;
+                color: white;
+                text-align: left;
+                padding: 8px;
+            }
+            td {
+                border-bottom: 1px solid #ddd;
+                padding: 8px;
+            }
+            .details {
+                color: #8b4513;
+                font-weight: bold;
+                list-style-type: square;
+            }
+            .steps-list {
+                line-height: 1.8;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <h1>My Personal Cookbook</h1>
+        
+        <div class="nav-box">
+            <h2>Contents:</h2>
+            <ul>
+                <li><a href="#pasta">Classic Italian Pasta</a></li>
+                <li><a href="#smoothie">Energy Fruit Smoothie</a></li>
+            </ul>
+        </div>
+        
+        <div id="pasta" class="recipe-card">
+            <h2>Classic Italian Pasta</h2>
+            <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/dumplings.png" alt="Pasta bowl">
+            
+            <ul class="details">
+                <li>Time: 15 minutes</li>
+                <li>Serves: 1 person</li>
+                <li>Difficulty: Easy</li>
+            </ul>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>100g</td>
+                    </tr>
+                    <tr>
+                        <td>Olive Oil</td>
+                        <td>2 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Garlic</td>
+                        <td>2 cloves</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p><strong>Steps:</strong></p>
+            <ol class="steps-list">
+                <li>Boil water in a large pot and cook spaghetti until al dente.</li>
+                <li>Heat olive oil in a pan and sauté sliced garlic until golden.</li>
+                <li>Toss the pasta in the garlic oil and serve with black pepper.</li>
+            </ol>
+            
+            <p><em>Source: <a href="https://www.bbcgoodfood.com">BBC Good Food</a></em></p>
+        </div>
+
+        <div id="smoothie" class="recipe-card">
+            <h2>Energy Fruit Smoothie</h2>
+            <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/brussels-sprouts.png" alt="Smoothie glass">
+            
+            <ul class="details">
+                <li>Time: 5 minutes</li>
+                <li>Serves: 2 people</li>
+                <li>Difficulty: Very Easy</li>
+            </ul>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banana</td>
+                        <td>1 large</td>
+                    </tr>
+                    <tr>
+                        <td>Frozen Berries</td>
+                        <td>1/2 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Yogurt</td>
+                        <td>200ml</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p><strong>Preparation:</strong></p>
+            <p class="steps-list">
+                First, peel the banana and break it into pieces. Put all ingredients into a blender. 
+                Blend on high speed for 45 seconds until the mixture is smooth and creamy. 
+                Pour into chilled glasses and enjoy immediately!
+            </p>
+            
+            <p><em>Source: <a href="https://wikipedia.org">Wikipedia</a></em></p>
+        </div>
+    
+    </body>
+</html>

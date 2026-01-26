@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Dev Blog</title>
+        <style>
+            body {
+                background-color: #1a1a1a; /* Темный фон */
+                color: #e0e0e0;
+                font-family: "Segoe UI", sans-serif; /* Без засечек для основы */
+                line-height: 1.7; 
+                margin: 0;
+                padding: 40px;
+            }
+
+            h1 {
+                font-family: serif; 
+                font-size: 3em;
+                color: #00ffcc;
+                text-align: right;
+                border-bottom: 2px solid #333;
+            }
+
+            #toc {
+                background-color: #252525;
+                padding: 20px;
+                border-radius: 10px;
+                display: inline-block;
+                min-width: 250px;
+            }
+
+            .post-entry {
+                margin-top: 50px;
+                padding: 25px;
+                border-left: 4px solid #00ffcc;
+                background-color: #2d2d2d;
+            }
+
+            .post-title {
+                font-family: monospace; 
+                font-weight: bold;
+                font-size: 1.5em;
+                color: #ffcc00;
+            }
+
+            .post-date {
+                font-style: italic; 
+                font-size: 0.9em;
+                color: #888;
+            }
+
+            a {
+                color: #00ffcc;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #00ffcc;
+                color: #1a1a1a;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Coder's Journey Log</h1>
+
+        <div id="toc">
+            <h3>Navigation</h3>
+            <ol>
+                <li><a href="#learning-css">Learning the Style</a></li>
+                <li><a href="#project-day">First Big Project</a></li>
+            </ol>
+        </div>
+
+        <div id="learning-css" class="post-entry">
+            <h2 class="post-title">> Learning the Style</h2>
+            <p class="post-date">Current Date: January 2026</p>
+            <p>
+                Today I discovered the power of CSS. It's amazing how a few lines of code can change a boring white page into a professional dark interface. I learned about <strong>font-family</strong> and how to combine <em>serif</em> and <em>monospace</em> fonts to create a unique look.
+            </p>
+        </div>
+
+        <div id="project-day" class="post-entry">
+            <h2 class="post-title">> First Big Project</h2>
+            <p class="post-date">Update: Two days later</p>
+            <p>
+                Started working on my personal travel page. Using internal links (anchors) is much easier than I thought. The key is to match the <strong>href="#id"</strong> with the actual <strong>id</strong> of the element. Coding is like building with LEGO!
+            </p>
+        </div>
+
+    </body>
+</html>

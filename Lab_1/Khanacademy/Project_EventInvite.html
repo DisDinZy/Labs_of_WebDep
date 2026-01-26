@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                background-color: #0f172a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: "Trebuchet MS", sans-serif;
+            }
+            #invitation-card {
+                background-color: #1e293b;
+                color: #f8fafc;
+                border: 4px double #fbbf24;
+                padding: 40px;
+                text-align: center;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+                max-width: 400px;
+            }
+            h1 {
+                font-family: serif;
+                color: #fbbf24;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-bottom: 5px;
+            }
+            .event-type {
+                font-style: italic;
+                color: #94a3b8;
+                margin-bottom: 30px;
+            }
+            .details-box {
+                border-top: 1px solid #334155;
+                border-bottom: 1px solid #334155;
+                padding: 20px 0;
+                margin: 20px 0;
+            }
+            .info-line {
+                margin: 10px 0;
+                font-size: 1.1em;
+            }
+            .info-line span {
+                color: #fbbf24;
+                font-weight: bold;
+            }
+            .rsvp-button {
+                display: inline-block;
+                background-color: #fbbf24;
+                color: #0f172a;
+                padding: 12px 25px;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: transform 0.2s;
+            }
+            .rsvp-button:hover {
+                transform: scale(1.1);
+                background-color: #fcd34d;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="invitation-card">
+            <h1>Movie Night</h1>
+            <p class="event-type">Exclusive Premiere Screening</p>
+
+            <div class="details-box">
+                <p class="info-line"><span>WHEN:</span> Friday, Dec 12</p>
+                <p class="info-line"><span>TIME:</span> 20:00 PM</p>
+                <p class="info-line"><span>WHERE:</span> Cinema Loft 42</p>
+            </div>
+
+            <p>Don't forget the popcorn! We're watching the latest sci-fi blockbuster.</p>
+
+            <a href="#" class="rsvp-button">CONFIRM ATTENDANCE</a>
+        </div>
+
+    </body>
+</html>
