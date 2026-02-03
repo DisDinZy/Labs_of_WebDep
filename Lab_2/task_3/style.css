@@ -1,0 +1,256 @@
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1f2328;
+    line-height: 1.5;
+}
+
+.icons{
+    width: 30px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px; 
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero-desc {
+    font-size: 20px;
+    color: #636c76;
+    margin-bottom: 32px;
+}
+
+
+.pricing-section {
+    display: flex;            
+    justify-content: center;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    flex: 1;                
+    position: relative;     
+    text-align: center;
+    box-shadow: 0 8px 200px rgba(140, 149, 159, 0.2);
+}
+
+
+.enterprise-card {
+    border: 4px solid #3e8ce6;
+    padding-top: 48px;    
+}
+
+.badge {
+    background-color: #3e8ce6;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;            
+    padding: 6px 0;      
+    position: absolute;
+    top: 0; 
+    left: 0;                 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+h2 { font-size: 24px;
+     margin-bottom: 8px;
+     }
+
+
+.sub-text { 
+        color: #636c76;
+        font-size: 16px;
+        margin-bottom: 16px;
+        min-height: 48px;
+}
+
+.price-block { 
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    display: flex; 
+    align-items: baseline; }
+
+
+.currency { 
+    font-size: 24px;
+    position: relative;
+    top: -10px; 
+}
+.period { 
+    font-size: 16px;
+    color: #636c76;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.USD{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.Every{
+    margin-bottom: 12px;
+    margin-left: -25px;
+    position: relative;
+    font-size: 14px; 
+}
+.btn-white, .btn-black {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid;
+}
+.btn-white { 
+    background: #fff;
+    border-color: #d0d7de;
+    color: #24292f; 
+}
+.btn-black { background: #1f2328;
+    color: #fff;
+    border-color: #1f2328; 
+}
+.btn-row {
+    display: flex;
+    gap: 8px; 
+}
+
+.features { 
+    list-style: none; 
+    margin-top: 24px; 
+    text-align: left;
+    
+}
+
+.features li { 
+    padding-left: -60px;
+    margin-bottom: 12px;
+    position: relative;
+    font-size: 16px; 
+    color: #636c76;
+    width: bold;
+}
+
+.features li::before { 
+    content: ">"; 
+    position: absolute; 
+    left: -25px; 
+    font-weight: bold; 
+}
+
+.addons-section {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: #f6f8fa; 
+}
+
+.addon-card h3 { 
+    font-size: 16px; 
+    margin-bottom: 4px;
+}
+.addon-card p { 
+    font-size: 14px;
+    color: #636c76; 
+}
+
+.Starting-at{
+
+    border: 1px solid #d0d7de; 
+    color: #636c76;            
+    border-radius: 10px;      
+    padding: 3px 15px;        
+    font-size: 12px;           
+    font-weight: 480;
+    display: inline-block;   
+    margin-bottom: 8px;      
+}
+.Featured{
+    color:rgb(25, 104, 250);
+    margin-left: -50px;
+}
+.New-word{
+    margin-left: 280px;
+    border: 1px solid #008111; 
+    color: #008111;           
+    border-radius: 35px;    
+    padding: 3px 7px;         
+    font-size: 12px;        
+    font-weight: 480;
+    display: inline-block;     
+    margin-bottom: 8px;        
+}
+
+@media (max-width: 900px) {
+    
+    
+    .pricing-section {
+        flex-direction: column;  
+        align-items: center;    
+        overflow-x: visible;  
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+   
+    .card {
+        width: 100%;            
+        max-width: 450px;        
+        margin-bottom: 24px;     
+        flex: none;             
+    }
+
+    .enterprise-card {
+        margin-top: 20px;        
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+
+    .hero-title {
+        font-size: 32px;
+    }
+}
