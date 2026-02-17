@@ -1,0 +1,31 @@
+body { 
+  font-family: sans-serif; 
+  margin: 0; 
+  background: #f4f4f4; 
+} 
+
+header { 
+  background-color: white; /* Белый фон шапки */
+  color: #f14635;          /* Красный цвет Kaspi (вместо rgb(255,0,0)) */
+  padding: 25px; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Тень внизу */
+  margin-bottom: 40px;
+}
+
+/* Стили специально для главного заголовка */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;       /* Очень крупный текст */
+  font-weight: 800;        /* Очень жирный текст */
+  display: flex;           /* Чтобы иконка и текст были в одну линию */
+  align-items: center;     /* Выравнивание по вертикали */
+  justify-content: center; /* Выравнивание по центру страницы */
+  gap: 15px;               /* Расстояние между иконкой и текстом */
+}
+
+/* Стиль для иконки (если используешь картинку) */
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
