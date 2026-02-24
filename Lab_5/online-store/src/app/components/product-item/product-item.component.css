@@ -1,0 +1,50 @@
+.card { background: white; border-radius: 12px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; }
+.image-preview { position: relative; cursor: pointer; text-align: center; }
+.image-preview img { width: 100%; height: 200px; object-fit: contain; }
+.zoom-hint { position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 5px 10px; border-radius: 5px; font-size: 12px; }
+.info h3 a { color: #333; text-decoration: none; }
+.info h3 a:hover { color: #f14635; }
+.desc { color: #777; font-size: 14px; height: 40px; overflow: hidden; }
+.rating { color: lightgray; font-size: 18px; margin: 10px 0; }
+.rating .filled { color: gold; }
+.price { font-size: 22px; font-weight: bold; color: #f14635; margin-bottom: 15px; }
+
+
+.actions { display: flex; gap: 10px; justify-content: space-between; }
+.actions button, .actions a { flex: 1; padding: 10px; border: none; border-radius: 6px; cursor: pointer; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; }
+.like-btn { background: #ffeef0; color: #f14635; }
+.del-btn { background: #f8f9fa; color: #555; border: 1px solid #ddd; }
+.kaspi-btn { background: #f14635; color: white; }
+.share-btns { display: flex; gap: 5px; }
+.share-btns button { flex: none; width: 40px; color: white; }
+.wa { background: #25D366; }
+.tg { background: #0088cc; }
+
+
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 30px; cursor: pointer; }
+.modal-main-image img { max-height: 400px; max-width: 100%; object-fit: contain; }
+.nav-btn { position: absolute; top: 40%; background: rgba(0,0,0,0.5); color: white; border: none; font-size: 30px; padding: 15px; cursor: pointer; border-radius: 5px; }
+.prev { left: 10px; }
+.next { right: 10px; }
+.modal-thumb img { width: 60px; height: 60px; object-fit: cover; border: 2px solid transparent; cursor: pointer; border-radius: 5px; }
+.modal-thumb.active img { border-color: #f14635; }
+.modal-content { 
+  background: white; 
+  padding: 20px; 
+  border-radius: 12px; 
+  position: relative; 
+  max-width: 600px; 
+  width: 90%; 
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center; 
+}
+
+.modal-thumbnails { 
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 15px; 
+  flex-wrap: wrap;
+}

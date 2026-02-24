@@ -1,0 +1,59 @@
+﻿<div class="card">
+  <div class="image-preview" (click)="openModal()">
+    <img [src]="currentImage" [alt]="product.name">
+    <div class="zoom-hint">🔍 OPEN</div>
+  </div>
+
+  <div class="info">
+    <h3><a [href]="product.link" target="_blank">{{ product.name }}</a></h3>
+    <p class="desc">{{ product.description }}</p>
+    
+    <div class="rating">
+      @for (star of [1,2,3,4,5]; track star) {
+        <span [class.filled]="star <= product.rating">★</span>
+      }
+      <span> {{ product.rating }}</span>
+    </div>
+
+    <div class="price">{{ product.price | number }} ₸</div>
+
+    <div class="actions">
+      <button (click)="like()" class="like-btn" [style.color]="product.likes > 0 ? 'red' : 'inherit'">
+        <span *ngIf="product.likes === 0">🤍</span>
+        <span *ngIf="product.likes > 0">❤️</span> 
+        {{ product.likes }}
+      </button>
+      <button (click)="delete()" class="del-btn">🗑️ Удалить</button>
+    </div>
+
+    <div class="actions" style="margin-top: 10px;">
+      <a [href]="product.link" target="_blank" class="kaspi-btn">В магазин</a>
+      <div class="share-btns">
+        <button (click)="share('whatsapp')" class="wa">Wa</button>
+        <button (click)="share('telegram')" class="tg">Tg</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@if (isModalOpen) {
+  <div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeModal()">×</button>
+      
+      <button class="nav-btn prev" (click)="prevImage($event)">&#10094;</button>
+      <div class="modal-main-image">
+        <img [src]="currentImage" [alt]="product.name">
+      </div>
+      <button class="nav-btn next" (click)="nextImage($event)">&#10095;</button>
+
+     <div class="modal-thumbnails">
+        @for (img of product.images; track img) {
+          <div class="modal-thumb" [class.active]="img === currentImage" (click)="selectImage(img)">
+            <img [src]="img">
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}
