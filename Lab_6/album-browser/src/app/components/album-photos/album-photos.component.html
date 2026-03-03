@@ -1,0 +1,16 @@
+<div style="padding: 20px;">
+  <button [routerLink]="['/albums', albumId]" style="margin-bottom: 20px;">← Back to Album Details</button>
+  
+  <h2>Photos for Album #{{ albumId }}</h2>
+
+  <div *ngIf="photos.length === 0">
+    <p>Loading photos...</p>
+  </div>
+
+  <div *ngIf="photos.length > 0" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px;">
+    <div *ngFor="let p of photos" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+      <img [src]="p.thumbnailUrl" [alt]="p.title" style="max-width: 100%;">
+      <p style="font-size: 12px; margin-top: 5px;">{{ p.title }}</p>
+    </div>
+  </div>
+</div>

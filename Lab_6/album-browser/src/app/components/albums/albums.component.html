@@ -1,0 +1,16 @@
+<div style="padding: 20px;">
+  <h2>All Albums</h2>
+
+  <div *ngIf="loading">
+    <p style="color: blue;">Loading albums...</p>
+  </div>
+
+  <ul *ngIf="!loading" style="list-style: none; padding: 0;">
+    <li *ngFor="let album of albums" style="margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+      <a [routerLink]="['/albums', album.id]" style="text-decoration: none; font-size: 18px; font-weight: bold;">
+        {{ album.id }}. {{ album.title }}
+      </a>
+      <button (click)="deleteAlbum(album.id)" style="margin-left: 15px; color: red;">Delete</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+<div *ngIf="album; else loadingTemplate" style="padding: 20px;">
+  <h2>Album Details</h2>
+  <p><strong>ID:</strong> {{ album.id }}</p>
+  
+  <div style="margin: 15px 0;">
+    <label>Edit Title: </label>
+    <input [(ngModel)]="album.title" style="width: 300px; padding: 5px;">
+    <button (click)="save()" style="margin-left: 10px;">Save Title</button>
+  </div>
+
+  <div style="margin-top: 20px; display: flex; gap: 15px;">
+    <button (click)="goBack()">← Back to List</button>
+    <button [routerLink]="['/albums', album.id, 'photos']" style="background: #007bff; color: white; border: none; padding: 5px 15px;">View Photos →</button>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <p style="padding: 20px;">Loading album details...</p>
+</ng-template>
